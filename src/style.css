@@ -1,24 +1,44 @@
+/* button */
 button {
-    width: 40px;
-    height: 20px;
+    /* img on button position */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* button opt */
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 60%;
+    background-color: transparent;
 }
 
+button:hover{
+    background-color: rgb(163, 163, 163);
+}
+
+#dark{
+    width: 50px;
+    transition: transform 1s;
+}
+
+#dark:hover{
+    transform: rotate(90deg);
+}
+
+/* dark mode */
 body {
-    /* button position set */
+    /* button position */
     display: flex;
     justify-content: center;
     align-items: center;
     /* body color */
     background-color: white;
-    color: black;
+    color: rgb(33,35,36);
 }
   
 .dark-mode {
     /* dark-mode class */
-    background-color: black;
+    background-color: rgb(33,35,36);
     color: white;
 }
 
-/*  
-*   button onclick fade animation for a bit second
-*/
